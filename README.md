@@ -1,54 +1,59 @@
-# Projeto de Cálculo Numérico - Unidade 2 (2025.2)
-**Universidade Federal do Vale do São Francisco (UNIVASF)** *Engenharia de Computação*
+# Projeto II - Cálculo Numérico (UNIVASF)
 
-## 🚀 Sobre o Projeto
-Este projeto consiste no desenvolvimento de uma aplicação web interativa para resolução de problemas reais de engenharia utilizando métodos numéricos. O sistema foi desenvolvido em **Python** utilizando o framework **Streamlit**, permitindo a entrada dinâmica de dados e visualização de resultados em tempo real.
+![Status](https://img.shields.io/badge/STATUS-CONCLUÍDO-brightgreen) ![Python](https://img.shields.io/badge/PYTHON-3.10+-blue) ![Streamlit](https://img.shields.io/badge/FRAMEWORK-STREAMLIT-red)
 
-🔗 **Acesse a aplicação online:** [CLIQUE AQUI PARA ACESSAR O SISTEMA](https://calculo-numerico-projeto-2-awdbbakyzxzet7yn7puvr7.streamlit.app/)
+Projeto desenvolvido para a disciplina de **Cálculo Numérico** da **Universidade Federal do Vale do São Francisco (UNIVASF)**, sob orientação do **Prof. Jorge Luis Cavalcanti Ramos**.
+
+## 🔗 Acesso à Aplicação
+A ferramenta está implantada e disponível para uso online. Clique no botão abaixo para acessar:
+
+[![Acessar Simulador](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://calculo-numerico-projeto-2-awdbbakyzxzet7yn7puvr7.streamlit.app/)
 
 ---
 
-## 🛠️ Funcionalidades Implementadas
+## 📝 Descrição do Projeto
 
-O sistema resolve quatro problemas distintos sorteados para a equipe:
+Este projeto consiste em uma **Aplicação Web (SaaS)** desenvolvida em Python, criada para solucionar problemas reais de engenharia através de métodos numéricos. O objetivo é demonstrar a aplicação prática de algoritmos para resolução de sistemas lineares, ajuste de dados experimentais e cálculo de áreas irregulares.
 
-### 1. Planejamento de Produção (Sistemas Lineares - Métodos Diretos)
-* **Problema:** Otimização de recursos (metal, plástico, borracha) para produção de componentes.
-* **Método:** Resolução de sistema $Ax=b$ via bibliotecas otimizadas (Decomposição LU implícita).
-* **Destaque:** Arredondamento lógico para números inteiros (peças físicas).
+A interface foi construída para permitir a **entrada dinâmica de dados**, possibilitando que o usuário simule diferentes cenários de produção, circuitos elétricos e hidrologia, visualizando os resultados matemáticos e gráficos em tempo real.
 
-### 2. Ponte de Wheatstone (Sistemas Lineares - Métodos Iterativos)
-* **Problema:** Determinação de correntes em circuito elétrico complexo desbalanceado.
-* **Método:** Gauss-Seidel.
-* **Destaque:** Análise de convergência e gráfico de decaimento do erro.
+## 👨‍💻 Equipe
 
-### 3. Ajuste de Curvas (Mínimos Quadrados)
-* **Problema:** Análise de dados experimentais.
-* **Método:** Regressão Linear, Polinomial (Parábola) e Exponencial (Linearizada).
-* **Destaque:** Comparação automática do Erro Quadrático Total para sugerir o melhor modelo.
+* **Caio Vinícius Soares Rosa de Souza**
+* **Lucas Gomes de Lucena**
+* **Wendell Moura Leite**
+
+---
+
+## 🚀 Funcionalidades Principais
+
+O sistema é dividido em quatro módulos computacionais, conforme os problemas propostos:
+
+### 1. Planejamento de Produção (Métodos Diretos)
+* **Contexto:** Otimização de linha de produção com recursos limitados (Metal, Plástico, Borracha).
+* **Solução:** Modelagem matricial $Ax=b$ e resolução via Decomposição LU.
+* **Saída:** Quantidade exata de componentes a serem produzidos (com tratamento de arredondamento inteiro).
+
+### 2. Análise de Circuitos (Métodos Iterativos)
+* **Contexto:** Cálculo de correntes em uma Ponte de Wheatstone desbalanceada.
+* **Solução:** Aplicação do **Método de Gauss-Seidel**.
+* **Destaque:** Visualização da convergência do erro a cada iteração e verificação de matriz diagonal dominante.
+
+### 3. Regressão de Dados (Mínimos Quadrados)
+* **Contexto:** Ajuste de curvas para dados experimentais.
+* **Solução:** Comparação automática entre modelos **Linear, Polinomial (Quadrático) e Exponencial**.
+* **Destaque:** Cálculo do Erro Quadrático Total para sugerir matematicamente o melhor modelo ao engenheiro.
 
 ### 4. Hidrologia (Integração Numérica)
-* **Problema:** Cálculo da área da seção transversal de um rio.
-* **Método:** Regra dos Trapézios e Regra de Simpson 1/3 (Repetidas).
-* **Destaque:** Validação automática da paridade de subintervalos para o método de Simpson.
+* **Contexto:** Determinação da área da seção transversal de um rio baseada em sondagens de profundidade.
+* **Solução:** Implementação comparativa das **Regras dos Trapézios** e **Simpson 1/3**.
+* **Destaque:** Geração gráfica do perfil do leito do rio e validação automática de paridade de intervalos.
 
 ---
 
-## 💻 Tecnologias Utilizadas
-* **Linguagem:** Python 3.x
-* **Interface:** Streamlit
-* **Cálculo Numérico:** NumPy, SciPy
-* **Visualização:** Matplotlib, Pandas
+## 🛠 Tecnologias Utilizadas
 
-## 👥 Autores
-* Caio Vinícius Soares Rosa de Souza
-* Lucas Gomes de Lucena
-* Wendell Moura Leite
-
----
-
-## ⚙️ Como rodar localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/wendellmoura0/calculo-numerico-projeto-2.git](https://github.com/wendellmoura0/calculo-numerico-projeto-2.git)
+* **Linguagem:** Python
+* **Interface Gráfica:** Streamlit
+* **Computação Científica:** NumPy & SciPy
+* **Visualização de Dados:** Matplotlib & Pandas
